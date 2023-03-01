@@ -2,9 +2,10 @@
     import Carousel from 'svelte-carousel';
     import { browser } from '$app/environment';
     import Industry from './Industry.svelte';
+    import Heading from './Heading.svelte';
     let carousel;
 
-    var industries=[
+    var industries1=[
         {
             img:"/tensax/photo 1.png",
             title: "AI in Healthcare",
@@ -49,7 +50,8 @@
             img:"/tensax/photo 9.png",
             title: "Smart Governance AI ",
             content:"Document intelligence | AI Assistants | AI Avatars | AI Works OS | AI Work Monitoring"
-        },
+        }]
+        var industries2=[
         {
             img:"/tensax/photo 10.png",
             title: "Transpotation AI",
@@ -102,20 +104,39 @@
         },
     ]
 </script>
-
-<div class="flex justify-center">
-    <p class="text-3xl font-bold text-center text-orange-500 mb-8 py-3  inline-block border-t-4 px-10 border-b-4">Explore TensaX AI Industries</p>
-    </div>
-
-{#if browser}
-  <Carousel
-    bind:this={carousel}
-    particlesToShow={3}
-duration={2000}
-autoplay
-  >
-    {#each industries as ind}
-    <Industry img={ind.img} title={ind.title} content = {ind.content}/>
-    {/each}
-  </Carousel>
-{/if}
+<div class="">
+    
+    <Heading>
+        Explore Tensa<span class="text-black">X AI Industries</span>
+    </Heading>
+<div class="rounded mx-28 relative">
+    <div class="h-full absolute z-10 bg-gradient-to-r from-white to-transparent w-8"></div>
+    {#if browser}
+        <Carousel
+            bind:this={carousel}
+            particlesToShow={3}
+            duration={1000}
+            autoplay
+            dots={false}
+            arrows={false}
+        >
+            {#each industries1 as ind}
+                <Industry img={ind.img} title={ind.title} content = {ind.content}/>
+            {/each}
+        </Carousel>
+        <Carousel
+        bind:this={carousel}
+        particlesToShow={3}
+        duration={1000}
+        autoplay
+        dots={false}
+        arrows={false}
+        >
+        {#each industries2 as ind}
+        <Industry img={ind.img} title={ind.title} content = {ind.content}/>
+        {/each}
+        </Carousel>
+    {/if}
+    <div class="h-full absolute right-0 top-0 z-10 bg-gradient-to-l from-white to-transparent w-8"></div>
+</div>
+</div>

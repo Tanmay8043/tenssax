@@ -18,6 +18,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@tailwindcss/forms": "^0.5.3",
 		"svelte-carousel": "^1.0.23"
 	}
 }
