@@ -176,7 +176,7 @@
     {/if}
 </div>
 
-<div id="industries" class="mx-20 mb-10">
+<div id="industries" class="mx-20 mb-10  bg-orange-100 p-4 rounded-2xl drop-shadow-2xl">
     <p class="text-3xl font-bold text-gray-700 mt-40 ">Explore Tensax AI Industries</p>
     <div class="grid grid-cols-4 gap-8 pt-10">
         {#each industries.slice(0, 7) as ind}
