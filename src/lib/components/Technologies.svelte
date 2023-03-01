@@ -5,7 +5,7 @@
 <div class="mt-32">
     <hr class="m-4 border-2 border-black w-[55rem] mx-auto">
     <p class="text-orange-400 text-5xl text-center">Partner with us to build technology</p>
-    <hr class="m-4 border-2 border-black">
+    <hr class="m-4 border-2 border-black  w-[55rem] mx-auto">
     <div class="relative flex mt-20 space-x-14 w-fit m-auto items-center">
         <div class="items-center space-y-5 w-fit">
             <img src="tensax/1.jpg" class="h-60 rounded-[6rem]" alt="">
