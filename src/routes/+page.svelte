@@ -3,6 +3,7 @@
     import { browser } from '$app/environment';
     import Industry from '../lib/components/Industry.svelte';
     import Footer from '../lib/components/Footer.svelte';
+    import Technologies from '../lib/components/Technologies.svelte';
     let carousel;
 
     var industries=[
@@ -185,6 +186,10 @@
         <div class="flex justify-center items-center bg-gray-100 rounded-lg ">view more
         </div>
     </div>
+</div>
+
+<div id="technologies">
+    <Technologies/>
 </div>
 
 <div id="footer">
